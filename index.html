@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج التواصل</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            direction: rtl;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-top: 10px;
+            font-size: 1.1em;
+            color: #333;
+        }
+        input, textarea {
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px;
+            font-size: 1.1em;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>نموذج التواصل</h1>
+        <form action="mailto:example@example.com" method="post" enctype="text/plain">
+            <label for="fname">الاسم:</label>
+            <input type="text" id="fname" name="fname" required>
+
+            <label for="lname">اسم العائلة:</label>
+            <input type="text" id="lname" name="lname" required>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">الرسالة:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+</body>
+</html>
