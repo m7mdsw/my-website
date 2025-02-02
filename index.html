@@ -24,6 +24,17 @@
             text-align: center;
             color: #333;
         }
+        .header-info {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 1.1em;
+            color: #555;
+            padding-bottom: 30px; /* Added space between names and form */
+        }
+        .header-info span {
+            display: block;
+            margin-top: 5px;
+        }
         form {
             display: flex;
             flex-direction: column;
@@ -61,6 +72,15 @@
 </head>
 <body>
     <div class="container">
+        <!-- Section for student names first, then the supervisor -->
+        <div class="header-info">
+            <span>عمل الطالبين:</span>
+            <span>محمد رضي سويف</span>
+            <span>حيدر فتحي البشراوي</span>
+            <span>تحت إشراف الأستاذ القدير عبد الرحمن خضر</span>
+        </div>
+
+        <!-- Contact form -->
         <h1>نموذج التواصل</h1>
         <form action="mailto:example@example.com" method="post" enctype="text/plain">
             <label for="fname">الاسم:</label>
